@@ -1,11 +1,55 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>My test page</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
   </head>
+
   <body>
-    <p>This is my page</p>
+    <form action="signup.html" class="webby">
+      <fieldset>
+        <legend>Contact</legend>
+        <label for="fname">Name: </label>
+
+        <input
+          type="text"
+          id="fname"
+          placeholder="Firstname"
+          required
+        /><br /><br />
+        <label for="email">email: </label>
+        <input
+          type="email"
+          id="email"
+          placeholder="Email Address"
+          required
+        /><br />
+
+        <input type="radio" id="pet" value="Cat" name="pet" />
+        <label for="pet">Cat</label>
+        <br />
+        <input type="radio" id="pet1" value="Dog" name="pet" />
+        <label for="pet">Dog:</label><br />
+        <input type="radio" id="pet2" value="Rabbit" name="pet" />
+        <label for="pet">Rabbit:</label> <br /><br />
+        <label for="Language">
+          <span>Language type:</span>
+        </label>
+        <select id="Language" name="Language">
+          <option value="HTML">HTML</option>
+          <option value="Js">Javascript</option>
+          <option value="CSS">Cascading Style Sheet</option>
+          <option value="Python">Python</option></select
+        ><br /><br />
+        <label for="message">message:</label>
+
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <br />
+        <br />
+        <button>send your message</button>
+      </fieldset>
+    </form>
   </body>
 </html>
